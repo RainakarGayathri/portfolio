@@ -1,0 +1,223 @@
+/* General body styles */
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+body {
+  background-color: #FEF8F4; /* Light cream background */
+  color: #B0B0B0;  
+  font-family:Garamond;
+  margin: 0;
+  padding: 0;
+}
+/* Update this: */
+.background-balls {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;  /* Add this */
+  
+}
+
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 15s infinite ease-in-out;
+}
+
+.ball:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.ball:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.ball:nth-child(3) {
+  top: 80%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+.ball:nth-child(4) {
+  top: 30%;
+  left: 50%;
+  animation-delay: 6s;
+}
+
+.ball:nth-child(5) {
+  top: 60%;
+  left: 30%;
+  animation-delay: 8s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); opacity: 0.3; }
+  50% { transform: translateY(-50px) scale(1.2); opacity: 0.1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.3; }
+}
+
+  
+  #certifications{
+    background-color:#F5F2EC;
+  }
+  #education{
+    background-color:#FFFDFB;
+  }
+  /* Navbar styles */
+  .navbar {
+    background-color: #E79353; /* Warm orange */
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Button styles */
+  .button {
+    background-color: #FCE2CD; /* Light peach button */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #E79353; /* Hover effect with warm orange */
+    color: white;
+  }
+  /* About section container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+/* Information section on the left */
+.info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Profile image on the right */
+.profile {
+  flex-shrink: 0;
+}
+
+/* Oval shape profile image with a border */
+.profile-img {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #E79353; /* Border with warm orange color */
+}
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill-img {
+  width: 80px;
+  height: 80px;
+}
+
+button {
+  background-color: #FCE2CD;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #E79353;
+  color: white;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Heading style */
+h1 {
+  color: #E79353; /* Warm orange */
+}
+
+  
+  /* Section and header styles */
+  .section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    color:black;
+  }
+  
+  h1, h2 {
+    color: black;
+    align-items:center; /* Warm orange for headings */
+  }
+  
+  /* Skills and projects grid */
+  .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  
+  .card {
+    background-color: #E79353; /* Warm orange for project cards */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Footer style*
+  
